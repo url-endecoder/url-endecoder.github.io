@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>URL Encoder/Decoder - Free Online Tool for URL Encoding & Decoding</title>
+    <meta name="title" content="URL Encoder/Decoder - Free Online Tool for URL Encoding & Decoding">
+    <meta name="description" content="Free online URL encoder and decoder tool. Instantly encode URLs to percent-encoded format or decode URL-encoded text. Fast, secure, and works in your browser. Perfect for developers and web professionals.">
+    <meta name="keywords" content="URL encoder, URL decoder, percent encoding, URL encoding online, decode URL, encode URL, URI encoder, URI decoder, percent-encoding, web development tools, online encoder, free URL tool">
+    <meta name="author" content="URL Encoder/Decoder">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/url-endecoder/">
+    <meta property="og:title" content="URL Encoder/Decoder - Free Online Tool">
+    <meta property="og:description" content="Free online URL encoder and decoder tool. Instantly encode URLs to percent-encoded format or decode URL-encoded text.">
+    <meta property="og:image" content="https://yourusername.github.io/url-endecoder/og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourusername.github.io/url-endecoder/">
+    <meta property="twitter:title" content="URL Encoder/Decoder - Free Online Tool">
+    <meta property="twitter:description" content="Free online URL encoder and decoder tool. Instantly encode URLs to percent-encoded format or decode URL-encoded text.">
+    <meta property="twitter:image" content="https://yourusername.github.io/url-endecoder/og-image.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourusername.github.io/url-endecoder/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Analytics (Replace GA_MEASUREMENT_ID with your actual ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "URL Encoder/Decoder",
+      "url": "https://yourusername.github.io/url-endecoder/",
+      "description": "Free online URL encoder and decoder tool for converting text to URL-safe format and vice versa",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "URL Encoding",
+        "URL Decoding",
+        "Copy to Clipboard",
+        "Keyboard Shortcuts",
+        "Responsive Design"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔗 URL Encoder/Decoder</h1>
+            <p class="subtitle">Encode and decode URLs instantly</p>
+        </header>
+
+        <main role="main">
+            <div class="tool-section">
+                <h2>🔒 URL Encoder</h2>
+                <p class="description">Convert special characters to URL-safe format</p>
+                <textarea 
+                    id="encodeInput" 
+                    placeholder="Enter text to encode (e.g., Hello World! & Special Characters)"
+                    rows="5"
+                    aria-label="Text to encode"
+                ></textarea>
+                <div class="button-group">
+                    <button onclick="encodeURL()" class="btn btn-primary">Encode</button>
+                    <button onclick="clearEncode()" class="btn btn-secondary">Clear</button>
+                    <button onclick="copyEncoded()" class="btn btn-success">Copy Result</button>
+                </div>
+                <textarea 
+                    id="encodeOutput" 
+                    placeholder="Encoded result will appear here..."
+                    rows="5"
+                    readonly
+                    aria-label="Encoded result"
+                ></textarea>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="tool-section">
+                <h2>🔓 URL Decoder</h2>
+                <p class="description">Convert URL-encoded text back to readable format</p>
+                <textarea 
+                    id="decodeInput" 
+                    placeholder="Enter URL-encoded text to decode (e.g., Hello%20World%21)"
+                    rows="5"
+                    aria-label="Text to decode"
+                ></textarea>
+                <div class="button-group">
+                    <button onclick="decodeURL()" class="btn btn-primary">Decode</button>
+                    <button onclick="clearDecode()" class="btn btn-secondary">Clear</button>
+                    <button onclick="copyDecoded()" class="btn btn-success">Copy Result</button>
+                </div>
+                <textarea 
+                    id="decodeOutput" 
+                    placeholder="Decoded result will appear here..."
+                    rows="5"
+                    readonly
+                    aria-label="Decoded result"
+                ></textarea>
+            </div>
+
+            <div class="info-section">
+                <h3>ℹ️ About URL Encoding</h3>
+                <p>URL encoding (also known as percent-encoding) converts characters into a format that can be transmitted over the Internet. Special characters are replaced with a "%" followed by two hexadecimal digits.</p>
+                <h4>Why Use URL Encoding?</h4>
+                <p>URLs can only contain certain characters from the standard ASCII character set. Any character outside this set must be encoded. This is essential for passing data in URLs, query parameters, and form submissions.</p>
+                <h4>Common Use Cases:</h4>
+                <ul>
+                    <li>Encoding query parameters in URLs</li>
+                    <li>Passing special characters in API requests</li>
+                    <li>Encoding email addresses and usernames</li>
+                    <li>Creating safe file names from user input</li>
+                    <li>Encoding data for web forms</li>
+                </ul>
+                <div class="examples">
+                    <h4>Common Examples:</h4>
+                    <ul>
+                        <li>Space → <code>%20</code> or <code>+</code></li>
+                        <li>! → <code>%21</code></li>
+                        <li># → <code>%23</code></li>
+                        <li>$ → <code>%24</code></li>
+                        <li>& → <code>%26</code></li>
+                        <li>@ → <code>%40</code></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer role="contentinfo">
+            <p>Made with ❤️ | Deploy on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></p>
+            <p class="copyright">© 2026 URL Encoder/Decoder. Free online tool for developers.</p>
+        </footer>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
