@@ -229,6 +229,36 @@ footer .copyright {
     color: var(--secondary-color);
 }
 
+/* AdSense Ad Container Styles */
+.ad-container {
+    margin: 30px auto;
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.ad-top {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.ad-middle {
+    margin: 40px auto;
+    padding: 20px 0;
+}
+
+.ad-bottom {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Responsive ad adjustments */
+@media (max-width: 768px) {
+    .ad-container {
+        margin: 20px auto;
+    }
+}
+
 .toast {
     position: fixed;
     bottom: 30px;
