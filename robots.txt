@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yourusername.github.io/url-endecoder/sitemap.xml
+Sitemap: https://url-endecoder.github.io/sitemap.xml
